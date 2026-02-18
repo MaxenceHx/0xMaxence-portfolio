@@ -41,11 +41,15 @@ const legalContent = document.getElementById('legal-content');
 // Name: Maxence HEUX -> TWF4ZW5jZSBIRVVY
 // Address: 92 B RUE de Solférino 59800 Lille FRANCE -> OTIgQiBSVUUgZGUgU29sZsOpcmlubyA1OTgwMCBMaWxsZSBGUkFOQ0U=
 // SIRET: 883150823 -> ODgzMTUwODIz
+// Host Name: Vercel Inc. -> VmVyY2VsIEluYy4=
+// Host Address: 440 N Barranca Ave #4133, Covina, CA 91723, USA -> NDQwIE4gQmFycmFuY2EgYXZlICM0MTMzLCBDb3ZpbmEsIENBIDkxNzIzLCBVU0E=
 
 const legalData = {
     name: 'TWF4ZW5jZSBIRVVY',
     address: 'OTIgQiBSVUUgZGUgU29sZsOpcmlubyA1OTgwMCBMaWxsZSBGUkFOQ0U=',
-    siret: 'ODgzMTUwODIz'
+    siret: 'ODgzMTUwODIz',
+    hostName: 'VmVyY2VsIEluYy4=',
+    hostAddress: 'NDQwIE4gQmFycmFuY2EgYXZlICM0MTMzLCBDb3ZpbmEsIENBIDkxNzIzLCBVU0E='
 };
 
 legalTrigger.addEventListener('click', (e) => {
@@ -59,11 +63,16 @@ legalTrigger.addEventListener('click', (e) => {
     const name = decodeURIComponent(escape(atob(legalData.name))); // decodeURIComponent/escape handles UTF-8 chars in base64
     const address = decodeURIComponent(escape(atob(legalData.address)));
     const siret = atob(legalData.siret);
+    const hostName = atob(legalData.hostName);
+    const hostAddress = atob(legalData.hostAddress);
 
     legalContent.innerHTML = `
         <p><strong>Editeur :</strong> ${name}</p>
         <p><strong>Adresse :</strong> ${address}</p>
         <p><strong>SIRET :</strong> ${siret}</p>
+        <br>
+        <p><strong>Hébergement :</strong> ${hostName}</p>
+        <p><strong>Adresse Hébergeur :</strong> ${hostAddress}</p>
     `;
 
     legalContent.classList.remove('hidden');
