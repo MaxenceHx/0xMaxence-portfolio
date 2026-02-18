@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxence | Full Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Maxence, a Full Stack Developer. Specialized in building modern web applications.">
+    <meta name="keywords" content="Maxence, Developer, Full Stack, Web Development, Portfolio, 0xMaxence">
+    <meta name="author" content="Maxence">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://0xMaxence.xyz/">
+    <meta property="og:title" content="Maxence | Full Stack Developer">
+    <meta property="og:description"
+        content="Portfolio of Maxence, a Full Stack Developer. Specialized in building modern web applications.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://0xMaxence.xyz/">
+    <meta property="twitter:title" content="Maxence | Full Stack Developer">
+    <meta property="twitter:description"
+        content="Portfolio of Maxence, a Full Stack Developer. Specialized in building modern web applications.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Inter:wght@400;600;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="container">
+        <nav>
+            <div class="logo">0xMaxence<span class="cursor">_</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="hero">
+            <h1 class="fade-in">Hi, I'm <span class="highlight">Maxence</span>.</h1>
+            <p class="subtitle fade-in-delay">Building things for the web.</p>
+            <div class="cta-buttons fade-in-delay-2">
+                <a href="#contact" class="btn primary">Get in Touch</a>
+                <a href="#projects" class="btn secondary">View Work</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About_Me</h2>
+            <div class="content user-info">
+                <p>I am a passionate developer focused on creating clean, efficient, and user-friendly web experiences.
+                    I love solving problems and turning ideas into reality through code.</p>
+                <p>My stack includes modern web technologies like React, Node.js, and more.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <!-- Fish On -->
+                <div class="project-card">
+                    <h3>Fish On</h3>
+                    <p>L'application mobile de référence pour les passionnés de pêche. Participez à des compétitions,
+                        enregistrez vos prises et rejoignez une communauté.</p>
+                    <div class="tags">
+                        <span>Mobile App</span>
+                        <span>Competition</span>
+                    </div>
+                    <a href="https://fish-on.app" target="_blank" rel="noopener noreferrer" class="project-link">View
+                        Project &rarr;</a>
+                </div>
+                <!-- Vibez -->
+                <div class="project-card">
+                    <h3>Vibez</h3>
+                    <p>Offrez un souvenir sonore inoubliable en collectant des messages vocaux de vos proches.</p>
+                    <div class="tags">
+                        <span>Web App</span>
+                        <span>Audio</span>
+                    </div>
+                    <a href="https://vibez-omega.vercel.app" target="_blank" rel="noopener noreferrer"
+                        class="project-link">View Project &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Interested in working together or just want to say hi?</p>
+
+            <div class="email-container">
+                <button id="reveal-email-btn" class="btn primary">Reveal Email</button>
+                <a id="email-link" href="#" class="hidden"></a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/0xMaxence" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://twitter.com/0xMaxence" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+                <!-- Add LinkedIn if desired -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> 0xMaxence.xyz. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.8rem;"><a href="#" id="legal-trigger"
+                    style="color: var(--secondary-color); text-decoration: none;">Mentions Légales (Legal)</a></p>
+            <div id="legal-content" class="hidden"
+                style="margin-top: 15px; font-size: 0.8rem; border-top: 1px solid var(--border-color); padding-top: 10px;">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
