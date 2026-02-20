@@ -7,7 +7,7 @@ const emailLink = document.getElementById('email-link');
 
 // 1. Encode your email in Base64 used btoa() in console 'me@0xmaxence.xyz' -> 'bWVAMHhtYXhlbmNlLnh5eg=='
 // Replace the string below with your actual encoded email.
-const encodedUser = 'Y29udGFjdA=='; // 'contact'
+const encodedUser = 'bWF4ZW5jZQ=='; // 'maxence'
 const encodedDomain = 'MHhtYXhlbmNlLnh5eg=='; // '0xmaxence.xyz'
 
 revealBtn.addEventListener('click', () => {
